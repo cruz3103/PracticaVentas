@@ -11,6 +11,9 @@ body {
     min-height: 100vh;
 }
 
+a{
+    margin-bottom: 20px;
+}
 /* Título */
 h1 {
     font-size: 2rem;
@@ -31,6 +34,24 @@ form {
     margin-bottom: 2rem;
     width: 100%;
     max-width: 800px;
+}
+
+select{
+    background-color: #2d2d2d;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    max-width: 700px;
+}
+select:hover{
+    box-shadow: 0 0 0 2px #00bfff;
+    background-color: #2a2a2a;
 }
 
 form input {

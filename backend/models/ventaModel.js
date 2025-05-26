@@ -15,7 +15,7 @@ export const registrarVenta = (venta, callback) => {
         db.query(
             'insert into ventas (id_cliente, id_producto, cantidad, precio_unitario, total) values (?, ?, ?, ?, ?)',
             [id_cliente, id_producto, cantidad, precio, total],
-            (err, results) => {
+            (err, resultado) => {
                 if(err) return callback(err);
 
                 db.query('update productos set stock = stock - ? where id = ?',[cantidad, id_producto], (err2) => {
